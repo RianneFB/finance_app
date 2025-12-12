@@ -1,9 +1,16 @@
-import "package:finance_app/widgets/action_buttons_widget.dart";
+import "package:finance_app/widgets/currency_card.dart";
 import "package:finance_app/widgets/custom_app_bar.dart";
 import "package:finance_app/widgets/total_value.dart";
+import "package:finance_app/widgets/transaction_section.dart";
+import "package:finance_app/widgets/analytics_section.dart";
+import "package:finance_app/widgets/bottom_bar.dart";
+import 'package:finance_app/widgets/action_buttons_widget.dart';
+import 'package:finance_app/widgets/transaction_item.dart';
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import 'package:iconsax/iconsax.dart';
+
+import "../widgets/action_buttons_widget.dart";
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -34,6 +41,11 @@ class HomeScreen extends StatelessWidget {
                           const TotalValueSection(),
                           SizedBox(height: 24),
                           ActionButtonRow(),
+                          SizedBox(height: 5),
+                          CurrencyCardSection(),
+                          const TransactionsSection(),
+                          const AnalyticsSection(),
+                          const BottomNavBar(),
                         ],
                       ),
                     ),
