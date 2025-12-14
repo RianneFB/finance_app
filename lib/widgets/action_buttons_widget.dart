@@ -61,19 +61,19 @@ class ActionButtonRow extends StatelessWidget {
         ),
         Expanded(
           child: ActionButton(
-            icon: Iconsax.arrow_up_3, 
+            icon: Iconsax.send, 
             label: "Send"
           )
         ),
         Expanded(
           child: ActionButton(
-            icon: Iconsax.dollar_circle, 
+            icon: Iconsax.document, 
             label: "Earn"
           ),
         ),
         Expanded(
           child: ActionButton(
-            icon: Iconsax.arrow_2, 
+            icon: Iconsax.more, 
             label: "Swap"
           ),
         ),
